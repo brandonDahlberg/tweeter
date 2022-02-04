@@ -1,4 +1,4 @@
-// Creates HTML textarea & character counter
+
 // Logic and style for character counter text
 $(document).ready(function () {
 	const $tweetText = $('#tweet-text');

@@ -50,7 +50,6 @@
 }
 #posted-text {
 	flex-flow: wrap;
-	font-style: italic;
 }
 .tweet-footer {
 	padding: 5px;

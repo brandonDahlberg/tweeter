@@ -15,11 +15,10 @@
 	border-radius: 2px;
 	padding: 0.3em;
 	display: flex;
-	flex-direction: column;
 }
 .input-container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 }
 
 .btn-counter-container {
@@ -46,9 +45,10 @@ button,
 	font-family: 'Source Sans Pro', sans-serif;
 	border: none;
 	outline: none;
-	height: 25px;
+	height: 3.2vh;
 	font-size: 20px;
 	margin-top: 1px;
+	margin-left: 0.5em;
 }
 
 #error-message {
