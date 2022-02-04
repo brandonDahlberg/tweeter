@@ -1,0 +1,71 @@
+/* Desktop Stylez */
+
+@media (min-width: 1024px) {
+	.main-container {
+		display: flex;
+	}
+
+	nav {
+		position: fixed;
+		z-index: 1;
+		display: flex;
+		font-family: 'Bungee', cursive;
+		background-color: #4267b2;
+		color: #ffffff;
+		height: 12vh;
+		width: 100%;
+		justify-content: space-between;
+	}
+	.title {
+		display: flex;
+		font-size: 5vh;
+		margin-left: 1em;
+	}
+	span {
+		align-self: center;
+		margin-top: 0.5em;
+		padding: 0.7em;
+	}
+	.text-box {
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 3vh;
+		margin-right: 1.8em;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.arrow-icon {
+		margin-bottom: 0.3em;
+		color: red;
+	}
+
+	header {
+		margin: 1.8em;
+		margin-top: 8em;
+		margin-right: 4em;
+		margin-left: 5vw;
+		width: 35%;
+		height: 45vh;
+		display: flex;
+		align-items: center;
+		background-color: #dfe3ee;
+	}
+	.wrapper {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.img {
+		height: 25vh;
+		margin-top: 1em;
+	}
+
+	.container {
+		margin: 1.8em;
+		margin-top: 5em;
+		margin-right: 5vw;
+		width: 50%;
+	}
+}

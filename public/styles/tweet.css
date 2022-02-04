@@ -1,0 +1,84 @@
+.tweet {
+	border: 5px solid rgb(111, 111, 111);
+	color: rgb(92, 92, 92);
+	transition: 0.3s;
+	margin: 1em 0em;
+}
+.tweet:hover {
+	box-shadow: 3px 5px;
+}
+
+.tweet-header {
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 12vh;
+}
+.profile-container {
+	padding-top: 1em;
+	display: flex;
+	flex-direction: row-reverse;
+	/* align-items: center; */
+	padding-left: 0.5em;
+}
+#profile-name {
+	font-weight: 200;
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+}
+
+#avatar {
+	height: 2.5em;
+	width: 2.5em;
+}
+
+#username {
+	font-weight: 600;
+	font-size: 20px;
+	padding-right: 2em;
+	opacity: 0.5;
+}
+.tweet-body {
+	display: flex;
+	border-bottom: 5px solid #545149;
+	padding: 0em 0.5em 0em 0.5em;
+	margin: 0em 1em 0em 1em;
+	height: 60%;
+}
+#posted-text {
+	flex-flow: wrap;
+	font-style: italic;
+}
+.tweet-footer {
+	padding: 5px;
+	height: 8vh;
+	display: flex;
+	justify-content: space-between;
+}
+.age {
+	display: flex;
+	align-items: center;
+	padding: 1em;
+}
+
+#age {
+	font-size: 15px;
+	padding-left: 0.5em;
+}
+.actions {
+	display: flex;
+	align-items: stretch;
+	padding-right: 2em;
+	padding-top: 3px;
+}
+.actions .fas {
+	padding: 0.2em;
+	font-size: 20px;
+}
+.fas:hover {
+	color: goldenrod;
+	font-size: 90%;
+}
