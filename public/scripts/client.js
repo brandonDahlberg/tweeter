@@ -5,8 +5,6 @@
  */
 
 $(document).ready(function () {
-	const $timeSincePost = timeago.format(new Date());
-
 	const $tweetButton = $('.tweet-btn');
 	const $tweetContainer = $('.tweet-container');
 	const $errorMessage = $('#error-message');
@@ -17,7 +15,8 @@ $(document).ready(function () {
 	const createTweet = function (tweet) {
 		// Creating Tweet with Jquery elements
 		// Create Tweet Header
-		const $avatar = $('<img>').attr({ src: '/images/users-15.svg', id: 'avatar' });
+		const timeNow = timeago.format(tweet.created_at);
+		const $avatar = $('<img>').attr({ src: tweet.user.avatars, id: 'avatar' });
 		const $profileName = $('<h4>').attr('id', 'profile-name').text(`${tweet.user.name}`);
 		const $profileContainer = $('<div>').addClass('profile-container');
 		const $headerItems = $profileContainer.append($profileName, $avatar);
@@ -30,15 +29,12 @@ $(document).ready(function () {
 		const $tweetBody = $body.append($postedText);
 
 		// Create Tweet Footer
-		const $time = $('<time>').addClass('timeago').attr('datetime', 'new Date()');
 		const $flag = $('<i>').addClass('fas fa-flag');
 		const $reTweet = $('<i>').addClass('fas fa-retweet');
 		const $heart = $('<i>').addClass('fas fa-heart');
 		const $actionDiv = $('<div>').addClass('actions');
 		const $actions = $($actionDiv).append($flag, $reTweet, $heart);
-		// const $ageText = $('<h5>').attr({ id: 'age', datetime: new Date() }).addClass('timeago');
-		// $('h5.timeago').timeago();
-		const $ageText = $('<h5>').attr('id', 'age').text(`${$timeSincePost}`);
+		const $ageText = $('<time>').addClass('timeago').attr('datetime', 'new Date()').text(`${timeNow}`);
 		const $ageDiv = $('<div>').addClass('age');
 		const $age = $ageDiv.append($ageText);
 		const $footerDiv = $('<footer>').addClass('tweet-footer');
@@ -47,15 +43,14 @@ $(document).ready(function () {
 		// Creat Tweet
 		const $tweetDiv = $('<article>').addClass('tweet');
 		const $tweet = $tweetDiv.append($tweetHeader, $tweetBody, $tweetFooter);
-
 		return $tweet;
 	};
+
 	const getTweets = () => {
 		$.ajax({
 			url: '/tweets',
 			method: 'GET',
 			success: tweets => {
-				console.log(tweets);
 				$tweetContainer.empty();
 				for (const tweet of tweets) {
 					const $tweet = createTweet(tweet);
@@ -67,7 +62,6 @@ $(document).ready(function () {
 
 	const tweetText = document.querySelector('#tweet-text');
 	getTweets();
-
 	$('#new-tweet-form').on('submit', function (event) {
 		event.preventDefault();
 		const data = $(this).serialize();
