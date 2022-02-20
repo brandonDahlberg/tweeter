@@ -29,5 +29,8 @@ If you wish to run this application:
 
 ## Screen Shots
 
+Desktop View
 !["Tweeter desktop view"](https://github.com/brandonDahlberg/tweeter/blob/master/docs/tweeter_desktop.png?raw=true)
+
+Mobile View
 !["Tweeter mobile view"](https://github.com/brandonDahlberg/tweeter/blob/master/docs/tweeter_mobile.png?raw=true)
