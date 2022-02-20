@@ -25,22 +25,19 @@
 		/>
 
 		<!-- App CSS -->
-		<link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-		<link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-		<link rel="stylesheet" href="/styles/header.css" type="text/css" />
-		<link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-		<link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/mediaQueries.css" type="text/css"/>
-
+		<link rel="stylesheet" href="/styles/05_layout.css" type="text/css" />
+		<link rel="stylesheet" href="/styles/02_nav.css" type="text/css" />
+		<link rel="stylesheet" href="/styles/01_header.css" type="text/css" />
+		<link rel="stylesheet" href="/styles/03_new-tweet.css" type="text/css" />
+		<link rel="stylesheet" href="/styles/04_tweets.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/06_mediaQueries.css" type="text/css"/>
 
 		<!-- External JS -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 		<!-- App JS -->
 	</head>
-
 	<body>
 		<!-- Top nav bar (fixed) -->
 		<nav>
@@ -63,7 +60,6 @@
 				<div class="img">
 					<img src="/images/profile-hex.png" />
 				</div>
-
 				<div class="name">
 					<h2><b>Brandon</b> Dahlberg</h2>
 				</div>
@@ -76,10 +72,10 @@
 				<section class="text-area">
 				<form method="POST" action="/tweets" id="new-tweet-form">
           <div class="input-container">
-					<label for="tweet-text"><b>What are you humming about?</b></label>
-					<textarea name="text" id="tweet-text"></textarea>
+					<textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
         </div>
         </section>
+
         <!-- Character Counter -->
 					<div class="btn-counter-container">
 						<button type="submit" class="tweet-btn"name="pub_tweet">Tweet</button>
@@ -88,6 +84,7 @@
 					</div>
 				</form>
 			</section>
+      
       <!-- Tweet Container -->
       <div class="tweet-container">
       </div>
