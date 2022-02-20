@@ -27,3 +27,7 @@ If you wish to run this application:
 - md5
 - Timeago
 
+## Screen Shots
+
+!["Tweeter desktop view"](https://github.com/brandonDahlberg/tweeter/blob/master/docs/tweeter_desktop.png?raw=true)
+!["Tweeter mobile view"](https://github.com/brandonDahlberg/tweeter/blob/master/docs/tweeter_mobile.png?raw=true)
